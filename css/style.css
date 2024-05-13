@@ -1,0 +1,625 @@
+*{ /*забираємо всі лишні відступи добавляємо шрифт тексту*/
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    overflow-x:hidden;
+}
+
+.main{
+}
+
+.h-bgcolor{ /*задаємо секції колір задноьго плану*/
+    background-color: #161C2D;
+}
+
+.main-wrapper{ /*основний контейнер , що обмежує контент посередині*/
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header-wrapper{ /*розділення елементів - флекс позицюіюванням*/
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.top-section{ /*верхній віступ*/
+        padding-top: 30px;
+    align-content: center;
+}
+
+.logo { /*опис лого*/
+    font-size: 24px;
+    font-weight: bold;
+    color: #F4F7FA;
+    text-decoration: none;
+}
+
+.h-wrapper-emelent-2{ /*робимо відображення в ряд*/
+    display: flex;
+
+}
+
+.h-wrapper-emelent-2 ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+.h-wrapper-emelent-2 ul li{ /*налаштування самих елеменів (оформлення)*/
+    list-style: none;
+    padding:10px 22px;
+    height: 40px;
+    align-self: center;
+
+    display: block;
+}
+
+.h-wrapper-emelent-2 ul li a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.h-btn{ /*кнопка*/
+        display: block;
+    color: #ffffff;
+    font-size: 17px;
+    background-color: #473BF0;
+    border-radius: 10px;
+    padding: 11px 0 16px 0;
+    height: 46px;
+    margin-top: -11px;
+    width: 160px;
+
+}
+
+
+
+.more-visitors{
+    margin-top: 140px;
+}
+
+.v-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.v-element-1{
+    margin-bottom: 182px;
+}
+
+.v-element-1, .v-element-2{
+    max-width: 541px;
+}
+
+.v-element-1 h1{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 500;
+
+}
+
+.v-element-1 p{
+        color: #ffffff;
+    font-size: 19px;
+    font-weight: 100;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.v-element-1 a{
+    color: #68D585;
+    font-size: 17px;
+    font-weight: 500;
+    /* line-height: 40px; */
+    /* padding-top: 35px; */
+    text-decoration: none;
+    position: relative;
+
+}
+
+.v-element-1 a::before{ /*добавлення стрілки*/
+        content: "";
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: -43px;
+    top: 25%;
+    background-image: url(../img/top/visitors/tail-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.bg-color-lightblue{
+    background-color: #E6ECF1;
+}
+
+.company{
+    position: relative;
+}
+
+.company-wrapper{ /*позиціонування елементів*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 0;
+}
+
+.line{
+    width: 2000px;
+    height: 1px;
+    background-color: #D8D8D8;
+    position: absolute;
+    left: -300px;
+}
+
+.benefits{
+    padding-top: 89px;
+    padding-bottom: 132px;
+}
+
+.benefits-wrapper{ /*позиціонування*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ben-elem1,.ben-elem2,.ben-elem3{
+   width: 265px;
+    position: relative;
+}
+
+.ben-title{
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.ben-text{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.ben-elem1::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/benefits/1.svg);
+}
+
+.ben-elem2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/benefits/2.svg);
+}
+
+.ben-elem3::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/benefits/3.svg);
+}
+
+
+.progress{
+    padding-bottom: 160px;
+}
+
+.progress-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress img{
+    display: block;
+}
+
+.head{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    padding-top: 84px;
+}
+
+.text{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: -.2;
+    color: #161C2D;
+    padding-top: 21px;
+    margin-bottom: 34px;
+}
+
+.link{
+    color: #473BF0;
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    position: relative;
+
+}
+
+.p-link::after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: -30px;
+    width: 13px;
+    height: 13px;
+    background-image: url(../img/progress/tail-right.svg);
+}
+
+.progress .right{
+    width: 390px;
+}
+
+
+.quick-section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-section-wrapper .left{
+    width: 430px;
+}
+
+.happy-customers{
+    padding: 130px 0;
+}
+
+.h-customers-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-customers-wrapper .right{
+    width: 407px;
+}
+
+
+.bg-color-darckblue{
+    background-color: #ECF2F7;
+}
+
+.price .title{
+    color: #161C2D;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 97px;
+}
+
+.price .head{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 300;
+    padding-top: 17px;
+}
+
+.price-t{
+    font-size: 19px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 340px;
+    align-items: baseline;
+    margin: 0 auto;
+}
+
+.checkbox{
+    width: 110px;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox label {
+    cursor: pointer;
+    padding-right: 35px;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding: 15px 0;
+    width: 110px;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+    position: absolute;
+    visibility: hidden !important;
+}
+
+.checkbox input[type="checkbox"]+label:before,
+.checkbox input[type="checkbox"]+label:after {
+    content: '';
+    position: absolute;
+    top: 47%;
+    margin-top: -7.5px;
+    box-sizing: border-box;
+}
+
+.checkbox input[type="checkbox"]+label:before,
+.checkbox input[type="radio"]+label:before {
+    width: 35px;
+    height: 20px;
+    right: 0px;
+    background: #979797;
+    border: 1px solid #e4e3e1;
+    border-radius: 15px;
+}
+
+.checkbox input[type="checkbox"]+label:after,
+.checkbox input[type="radio"]+label:after {
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: 26px;
+    background: #BDBDBD;
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+}
+
+.checkbox input[type="checkbox"]:checked+label:after,
+.checkbox input[type="radio"]:checked+label:after {
+    right: 3px;
+    background: #fff;
+}
+
+
+.save-btn{
+    display: block;
+    width: 95px;
+    height: 29px;
+    background-color: #d4ccfc;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 10px;
+    color: #473BF0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.plans-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.plan-item{
+    max-width: 350px;
+    background-color: #fff;
+    padding: 40px 50px;
+}
+
+.plan-item h3{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #473BF0;
+}
+
+.plans-price{
+    font-size: 17px;
+    padding-top: 30px;
+}
+
+
+.plans-price .numb{
+    font-size: 35px;
+}
+
+.plans-subtitle{
+    font-size: 15px;
+    color: #161C2D;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.plan-item ul{
+    padding-top: 13px;
+}
+
+.plan-item ul li{
+    list-style: none;
+    padding-top: 15px;
+    font-size: 17px;
+    position: relative;
+    margin-left: 25px;
+
+}
+
+.plans-btn{
+    display: block;
+    margin-top: 30px;
+    width:190px;
+    padding: 15px 0 15px 22px;
+    background-color: #d4ccfc;
+    border-radius: 10px;
+    color: #473BF0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+
+.plans-btn::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 16px;
+    right: 35px;
+    background-image: url(../img/icons/tail-right.svg);
+    background-repeat: no-repeat;
+    top: 17px;
+}
+
+.plans-b-text{
+    font-size: 15px;
+    font-weight: lighter;
+    padding-top: 12px;
+}
+
+.p-ok::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -23px;
+    width: 17px;
+    height: 15px;
+    background: url(../img/icons/OK.svg);
+    background-repeat: no-repeat;
+}
+
+.p-none::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -23px;
+    width: 17px;
+    height: 15px;
+    background: url(../img/icons/X.svg);
+    background-repeat: no-repeat;
+}
+
+.comments{
+    padding-top: 147px;
+    padding-bottom: 117px;
+}
+
+.comments-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.com-item{
+    max-width: 500px;
+    position: relative;
+}
+
+.com-item h1{
+    font-size: 24px;
+    height: 112px;
+}
+
+.com-b-wrapper{
+    display: flex;
+    padding-top: 25px;
+
+}
+
+.author-name{
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.author-position{
+    font-weight: 300;
+}
+
+.com-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons/%E2%80%9C.svg);
+    top: -60px;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.f-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    color: #fff;
+    padding-bottom: 108px;
+}
+
+.f-wrap-item h3{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.f-wrap-item ul{
+    font-size: 17px;
+    font-weight: 300;
+    padding-top: 20px;
+
+}
+
+.f-wrap-item ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.f-wrap-item ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer{
+    border-top: 1px solid #292F41;
+}
+
+
+.f-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.f-left p{
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+}
+
+.f-left p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -25px;
+    width: 16px;
+    height: 13px;
+    background-image: url(../img/icons/heart.svg);
+    top: 15%;
+    background-repeat: no-repeat;
+
+}
+
+
+.link-wrap{
+    display: flex;
+    justify-content: space-around;
+    width: 162px;
+}
